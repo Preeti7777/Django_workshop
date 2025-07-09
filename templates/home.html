@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preeti Gurung | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-50 via-blue-100 to-pink-200 text-gray-800 font-sans relative overflow-hidden"
+  >
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center px-10 py-5 bg-white bg-opacity-90 border-b border-blue-200 shadow-sm"
+    >
+      <div class="flex items-center gap-2">
+        <img src="{% static 'image/p.webp' %}" alt="Logo" class="h-10 w-8" />
+        <span class="font-bold text-pink-400 text-xl">Preeti</span>
+      </div>
+      <ul class="flex gap-8 text-sm font-medium">
+        <li>
+          <a href="#" class="text-pink-400 border-b-2 border-pink-500">Home</a>
+        </li>
+        <li><a href="#" class="hover:text-pink-400 transition">About</a></li>
+        <li><a href="#" class="hover:text-pink-400 transition">Skills</a></li>
+        <li><a href="#" class="hover:text-pink-400 transition">Projects</a></li>
+        <li>
+          <a href="/contact" class="hover:text-pink-400 transition"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col md:flex-row items-center justify-between px-10 py-20"
+    >
+      <!-- Left Text -->
+      <div class="space-y-6 md:w-1/2 pl-12">
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+          Hi,<br />
+          I'm <span class="text-pink-500">Preeti</span>
+        </h1>
+        <h2 class="text-3xl md:text-4xl font-bold">Frontend Developer</h2>
+        <div class="flex items-center text-lg text-gray-600">
+          <i class="fas fa-map-marker-alt mr-2 text-pink-500"></i>
+          <span>Pokhara, Nepal</span>
+        </div>
+        <div class="flex items-center text-lg text-gray-600">
+          <i class="fas fa-phone-alt mr-2 text-pink-500"></i>
+          <span>+977-9700000000</span>
+        </div>
+        <div class="flex items-center text-lg text-gray-600">
+          <i class="fas fa-envelope mr-2 text-pink-500"></i>
+          <span>gurungpreeti999@gmail.com</span>
+        </div>
+        <a
+          href="/contact"
+          class="mt-6 inline-block bg-pink-500 text-white text-lg px-8 py-3 rounded hover:bg-pink-700 transition"
+          >Contact</a
+        >
+      </div>
+
+      <!-- Right Image -->
+      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        <div class="relative">
+          <img
+            src="{% static 'image/profile.jpg' %}"
+            alt="Preeti"
+            class="rounded-full w-96 h-96 object-cover shadow-lg border-4 border-pink-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+     
+  </body>
+</html>
